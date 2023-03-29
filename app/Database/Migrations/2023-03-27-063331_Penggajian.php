@@ -28,6 +28,8 @@ class Penggajian extends Migration
             ],
         ]);
         $this->forge->addKey('no_penggajian', true);
+        $this->forge->addForeignKey('id_user', 'user', 'id_user');
+        $this->forge->addForeignKey('pencatat', 'user', 'id_user');
         $this->forge->createTable('penggajian', true);
     }
 

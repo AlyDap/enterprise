@@ -27,8 +27,8 @@ class DetailPenjualan extends Migration
             ],
 
         ]);
-        // $this->forge->addForeignKey('id_penjualan', 'penjualan', 'id_penjualan');
-        // $this->forge->addForeignKey('id_produk', 'produk', 'id_produk');
+        $this->forge->addForeignKey('id_penjualan', 'penjualan', 'id_penjualan', 'cascade', 'cascade');
+        $this->forge->addForeignKey('id_produk', 'produk', 'id_produk', 'cascade', 'cascade');
         $this->forge->createTable('detail_penjualan');
     }
 

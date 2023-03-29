@@ -35,6 +35,8 @@ class Finance extends Migration
             ],
         ]);
         $this->forge->addKey('no_urut', true);
+        $this->forge->addForeignKey('pencatat', 'user', 'id_user');
+        $this->forge->addForeignKey('penerima', 'user', 'id_user');
         $this->forge->createTable('finance', true);
     }
 

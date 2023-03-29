@@ -28,6 +28,8 @@ class PembelianBahan extends Migration
             ],
         ]);
         $this->forge->addKey('no_pembelian', true);
+        $this->forge->addForeignKey('id_user', 'user', 'id_user');
+        $this->forge->addForeignKey('id_supplier', 'mitra', 'id_mitra');
         $this->forge->createTable('pembelian');
     }
 

@@ -26,7 +26,8 @@ class DetailJahit extends Migration
                 'type'  => 'INT',
             ],
         ]);
-        $this->forge->addKey('id_user', true);
+        $this->forge->addForeignKey('no_penjahitan', 'penjahitan', 'no_penjahitan');
+        $this->forge->addForeignKey('id_produk', 'produk', 'id_produk');
         $this->forge->createTable('detail_jahit', true);
     }
 

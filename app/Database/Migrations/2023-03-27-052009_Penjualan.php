@@ -15,7 +15,6 @@ class Penjualan extends Migration
                 'type'  => 'INT',
                 'auto_increment'    => true,
                 'constraint'    => 11
-
             ],
             'tgl'   => [
                 'type'  => 'DATETIME',
@@ -28,9 +27,8 @@ class Penjualan extends Migration
             ],
         ]);
         $this->forge->addKey('id_penjualan', true);
-        // $this->forge->addForeignKey('id_user', 'user', 'id_user', 'cascade', 'cascade');
+        $this->forge->addForeignKey('id_user', 'user', 'id_user', 'cascade', 'cascade');
         $this->forge->createTable('penjualan', true);
-        // $this->db->enableForeignKeyChecks();
     }
 
     public function down()

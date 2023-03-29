@@ -13,7 +13,6 @@ class Bahan extends Migration
                 'type'  => 'INT',
                 'auto_increment'    => true,
                 'constraint'    => 11
-
             ],
             'nama' => [
                 'type'  => 'INT',

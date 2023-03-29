@@ -3,3 +3,19 @@ MAKUL ENTERPRISE
 membuat sistem enterprise untuk perusahaan M-Sari
 
 Senin & Rabu
+
+login dashboard   = bersama teman2
+
+penjualan ->penjualan, detail,produk		= ian
+pembelian bahan -> pembelian, detail, bahan	= febi
+penjahitan -> penjahitan, detail jahit		= arya
+finance -> finance				= ceka
+hrd -> user, penggajian				= eriq
+bos -> mitra, rekap tampilan			= alilogin dashboard   = bersama teman2
+
+penjualan ->penjualan, detail,produk		= ian
+pembelian bahan -> pembelian, detail, bahan	= febi
+penjahitan -> penjahitan, detail jahit		= arya
+finance -> finance				= ceka
+hrd -> user, penggajian				= eriq
+bos -> mitra, rekap tampilan			= ali

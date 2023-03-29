@@ -26,6 +26,8 @@ class DetailPembelian extends Migration
             ],
 
         ]);
+        $this->forge->addForeignKey('no_pembelian', 'pembelian', 'no_pembelian');
+        $this->forge->addForeignKey('id_bahan', 'bahan', 'id_bahan');
         $this->forge->createTable('detail_pembelian');
     }
 
